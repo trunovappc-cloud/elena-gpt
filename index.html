@@ -86,7 +86,24 @@ footer{background:#0a1422;color:#8da0bb;font-size:14px;padding:22px 0 90px}
  .sm{display:block}.sticky{display:none}footer{padding-bottom:30px}
  form{max-width:560px}
 }
-</style></head><body>
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1379457230751347');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1379457230751347&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head><body>
 <header><div class="w"><a class="logo" href="#">Elena <b>Trunova</b></a>
 <div class="r"><a class="lang" href="ru.html" hreflang="ru">RU</a><a class="sm" href="#zayavka">Залишити заявку</a></div></div></header>
 
@@ -162,7 +179,8 @@ var s=document.getElementById('s'),n=document.getElementById('n'),u=document.get
 var map={geo:'Видимість у ChatGPT',ads:'Реклама в ChatGPT',both:'Обидві послуги'};
 function msg(){return 'Вітаю! Мене цікавить: '+s.value+'.'+(n.value?' Мене звати '+n.value+'.':'')+(u.value?' Сайт: '+u.value:'')}
 function up(){wa.href='https://wa.me/34613212704?text='+encodeURIComponent(msg())}
+wa.addEventListener('click',function(){try{fbq('track','Lead')}catch(e){}});
 [s,n,u].forEach(function(e){e.addEventListener('input',up)});up();
 document.querySelectorAll('[data-s]').forEach(function(a){a.addEventListener('click',function(){s.value=map[a.dataset.s];up()})});
-document.getElementById('cp').onclick=function(){try{navigator.clipboard.writeText(msg());this.textContent='Скопійовано'}catch(e){}};
+document.getElementById('cp').onclick=function(){try{fbq('track','Lead')}catch(e){}try{navigator.clipboard.writeText(msg());this.textContent='Скопійовано'}catch(e){}};
 </script></body></html>
