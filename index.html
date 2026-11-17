@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Реклама та видимість бізнесу в ChatGPT. Elena Trunova, Marketing &amp; Google Ads."><title>Бізнес у відповідях ChatGPT | Elena Trunova</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1b2d;--navy2:#172740;--ink:#16202e;--muted:#55627a;--sky:#d6eafa;--grey:#f3f7fb;--line:#dce6f0;--y:#ffc700}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:500 18px/1.6 Montserrat,system-ui,sans-serif;color:var(--ink);background:#fff;-webkit-text-size-adjust:100%}
+a{color:inherit}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h1,h2,h3{font-weight:800;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:30px;margin-bottom:28px}
+.btn{display:block;text-align:center;background:var(--y);color:var(--navy);font-weight:800;font-size:17px;padding:17px 24px;border-radius:12px;text-decoration:none;border:0;cursor:pointer;width:100%;font-family:inherit}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.35)}
+header{background:var(--navy);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.08)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{color:#fff;font-weight:800;font-size:17px;text-decoration:none}.logo b{color:var(--y)}
+.r{display:flex;gap:10px;align-items:center}
+.lang{color:#fff;font-weight:700;font-size:14px;text-decoration:none;border:1px solid rgba(255,255,255,.3);padding:7px 11px;border-radius:8px}
+.sm{background:var(--y);color:var(--navy);font-weight:800;font-size:14px;padding:9px 14px;border-radius:8px;text-decoration:none;display:none}
+.hero{background:var(--navy);color:#fff;padding:36px 0 0;overflow:hidden}
+.hero .w{display:grid;gap:28px}
+.tag{display:inline-block;color:var(--y);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-size:38px;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--y)}
+.hero p{color:#c9d6e8;font-size:19px;margin-bottom:24px}
+.hero .btns{display:grid;gap:12px;margin-bottom:28px}
+.ph{position:relative;align-self:end;margin:0 -20px}
+.ph img{display:block;width:100%;height:auto;max-height:440px;object-fit:cover;object-position:50% 12%}
+.ph:after{content:"";position:absolute;left:0;right:0;top:0;height:60px;background:linear-gradient(var(--navy),transparent)}
+.badge{position:absolute;left:20px;bottom:18px;background:var(--y);color:var(--navy);font-weight:800;font-size:14px;padding:10px 14px;border-radius:10px;line-height:1.3}
+.facts{background:var(--navy2);color:#fff;padding:26px 0}
+.facts .w{display:grid;grid-template-columns:1fr 1fr;gap:18px 14px}
+.facts b{display:block;color:var(--y);font-size:26px;font-weight:800;line-height:1.1}
+.facts span{font-size:15px;color:#b7c6dc;line-height:1.35;display:block;margin-top:4px}
+.cards{display:grid;gap:18px}
+.card{border:2px solid var(--line);border-radius:18px;padding:26px 22px;background:#fff}
+.card.dark{background:var(--navy);color:#fff;border-color:var(--navy)}
+.card h3{font-size:25px;margin:6px 0 12px}
+.card .lab{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card.dark .lab{color:var(--y)}
+.card p{margin-bottom:16px;color:var(--muted)}.card.dark p{color:#c9d6e8}
+.card ul{list-style:none;padding:0;margin:0 0 18px}
+.card li{padding-left:30px;position:relative;margin-bottom:10px}
+.card li:before{content:"✓";position:absolute;left:0;top:0;width:21px;height:21px;border-radius:50%;background:var(--y);color:var(--navy);font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:4px}
+.price{border-top:1px solid var(--line);padding-top:16px;margin-bottom:16px}.card.dark .price{border-color:rgba(255,255,255,.18)}
+.price b{font-size:30px;font-weight:800}
+.price small{display:block;font-size:15px;color:var(--muted);margin-top:2px}.card.dark .price small{color:#b7c6dc}
+.combo{margin-top:18px;background:var(--y);border-radius:18px;padding:22px;color:var(--navy);display:grid;gap:12px}
+.combo b{font-size:20px;font-weight:800;line-height:1.25}.combo span{font-size:16px;font-weight:600}
+.note{margin-top:16px;font-size:15px;color:var(--muted)}
+.grey{background:var(--grey)}
+.steps{display:grid;gap:14px;counter-reset:s}
+.st{background:#fff;border-radius:16px;padding:20px 20px 20px 74px;position:relative;border:1px solid var(--line)}
+.st:before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:18px;width:42px;height:42px;border-radius:50%;background:var(--navy);color:var(--y);font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center}
+.st b{display:block;font-size:19px;font-weight:800;margin-bottom:2px}.st span{color:var(--muted);font-size:17px}
+.about{display:grid;gap:22px;align-items:center}
+.about img{width:100%;max-height:420px;object-fit:cover;object-position:50% 15%;border-radius:18px}
+.about p{margin-bottom:12px;color:var(--muted)}.about p b{color:var(--ink)}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font-weight:700;font-size:18px;cursor:pointer;list-style:none;position:relative;padding-right:34px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:0;top:-2px;font-size:28px;color:var(--navy);font-weight:500}
+details[open] summary:after{content:"–"}
+details p{margin-top:10px;color:var(--muted)}
+.contact{background:var(--navy);color:#fff}
+.contact h2{margin-bottom:10px}.contact>.w>p{color:#c9d6e8;margin-bottom:24px}
+form{display:grid;gap:12px}
+label{font-size:14px;font-weight:700;color:#b7c6dc;display:block;margin-bottom:5px}
+select,input{width:100%;font:600 17px Montserrat,sans-serif;padding:15px 14px;border-radius:12px;border:0;background:#fff;color:var(--ink)}
+.cp{background:none;border:0;color:#b7c6dc;font:600 15px Montserrat;text-decoration:underline;cursor:pointer;padding:8px}
+footer{background:#0a1422;color:#8da0bb;font-size:14px;padding:22px 0 90px}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;padding:10px 14px;box-shadow:0 -4px 18px rgba(15,27,45,.18);z-index:30}
+@media(min-width:861px){
+ body{font-size:19px}section{padding:84px 0}h2{font-size:40px}
+ .hero{padding-top:70px}.hero .w{grid-template-columns:1.1fr .9fr;align-items:end;gap:50px}.hero h1{font-size:54px}
+ .hero .btns{grid-template-columns:auto auto;justify-content:start}.btn{width:auto;padding:17px 30px}
+ .ph{margin:0}.ph img{max-height:none;border-radius:22px 22px 0 0}.ph:after{display:none}
+ .facts .w{grid-template-columns:repeat(4,1fr)}
+ .cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}
+ .st{padding:74px 20px 22px}.st:before{left:20px}
+ .about{grid-template-columns:.8fr 1.2fr;gap:50px}
+ .combo{grid-template-columns:1fr auto;align-items:center}
+ .sm{display:block}.sticky{display:none}footer{padding-bottom:30px}
+ form{max-width:560px}
+}
+</style></head><body>
+<header><div class="w"><a class="logo" href="#">Elena <b>Trunova</b></a>
+<div class="r"><a class="lang" href="ru.html" hreflang="ru">RU</a><a class="sm" href="#zayavka">Залишити заявку</a></div></div></header>
+
+<div class="hero"><div class="w">
+<div><span class="tag">Реклама та видимість у ChatGPT</span>
+<h1>Ваш бізнес у відповідях <em>ChatGPT</em></h1>
+<p>Допомагаю компаніям потрапити в рекомендації ChatGPT і запускаю рекламу в ньому. Я, Олена Трунова, маркетолог з Google Ads.</p>
+<div class="btns"><a class="btn" href="#poslugy">Обрати послугу</a><a class="btn ghost" href="#zayavka">Безкоштовна експрес-перевірка</a></div></div>
+<div class="ph"><img src="photo.jpg" alt="Elena Trunova"><div class="badge">Elena Trunova<br>Marketing &amp; Google Ads</div></div>
+</div></div>
+
+<div class="facts"><div class="w">
+<div><b>21.10.2026</b><span>реклама в ChatGPT доступна в Україні</span></div>
+<div><b>89 країн</b><span>де вже працює OpenAI Ads</span></div>
+<div><b>Free і Go</b><span>користувачі, які бачать рекламу</span></div>
+<div><b>від 15 €</b><span>мінімальний бюджет на день</span></div>
+</div></div>
+
+<section id="poslugy"><div class="w">
+<h2>Дві послуги. Обирайте одну або обидві</h2>
+<div class="cards">
+<div class="card"><span class="lab">Послуга 1</span><h3>Видимість у ChatGPT</h3>
+<p>Щоб ChatGPT називав вашу компанію у відповідях без реклами.</p>
+<ul><li>Аудит: чи згадують вас зараз</li><li>Правки сайту й присутність у джерелах</li><li>Звіт по запитах клієнтів</li></ul>
+<div class="price"><b>від 200 €</b><small>налаштування, далі від 150 €/міс</small></div>
+<a class="btn" href="#zayavka" data-s="geo">Хочу в ChatGPT</a></div>
+<div class="card dark"><span class="lab">Послуга 2</span><h3>Реклама в ChatGPT</h3>
+<p>Показ вашої компанії людям у момент, коли вони шукають послугу.</p>
+<ul><li>Кабінет, цілі, аудиторія</li><li>Оголошення та запуск</li><li>Щотижнева оптимізація й звіт</li></ul>
+<div class="price"><b>від 200 €</b><small>налаштування, далі від 200 €/міс. Бюджет реклами окремо, від 15 €/день</small></div>
+<a class="btn" href="#zayavka" data-s="ads">Запустити рекламу</a></div>
+</div>
+<div class="combo"><div><b>Обидві послуги разом</b><br><span>від 350 € налаштування, далі від 300 €/міс</span></div><a class="btn" style="background:var(--navy);color:#fff" href="#zayavka" data-s="both">Хочу обидві</a></div>
+<p class="note">Починаємо з аудиту видимості: від 100 €. Гарантій місця у відповідях ніхто не дає, ми підвищуємо шанси й міряємо результат.</p>
+</div></section>
+
+<section class="grey"><div class="w">
+<h2>Як ми працюємо</h2>
+<div class="steps">
+<div class="st"><b>Заявка</b><span>Пишете у WhatsApp, я пропоную формат за вашою нішею.</span></div>
+<div class="st"><b>Перевірка</b><span>Дивимось, як ChatGPT відповідає по вашому бізнесу зараз.</span></div>
+<div class="st"><b>Запуск і звіт</b><span>Налаштовую, запускаю, показую цифри щотижня.</span></div>
+</div></div></section>
+
+<section><div class="w about">
+<img src="photo.jpg" alt="Elena Trunova">
+<div><h2>Хто з вами працює</h2>
+<p><b>Elena Trunova.</b> Маркетолог, сертифікований спеціаліст Google Ads, 9+ років у платній рекламі, SEO та сайтах.</p>
+<p>Працюю з українським, російськомовним та іспаномовним ринками. Особисто веду кожен проєкт.</p></div>
+</div></section>
+
+<section class="grey"><div class="w">
+<h2>Питання</h2>
+<details><summary>Чи правда, що реклама є в Україні?</summary><p>Так, з 21 жовтня 2026 року кабінет OpenAI Ads доступний для України.</p></details>
+<details><summary>Мінімальний бюджет?</summary><p>Від 15 € на день в євро-кабінеті (25 $ у доларовому). Це окремо від моєї роботи.</p></details>
+<details><summary>Скільки коштує безкоштовна перевірка?</summary><p>Нічого. Я скажу, згадує вас ChatGPT чи ні, і кого називає замість вас.</p></details>
+<details><summary>Чи гарантуєте результат?</summary><p>Ні. Ніхто чесно не може гарантувати місце у відповіді ШІ. Я працюю над шансами й показую цифри.</p></details>
+</div></section>
+
+<section class="contact" id="zayavka"><div class="w">
+<h2>Напишіть мені</h2><p>Відповім у WhatsApp, зазвичай протягом дня.</p>
+<form onsubmit="return false">
+<div><label>Що цікавить</label><select id="s"><option value="Безкоштовна експрес-перевірка">Безкоштовна експрес-перевірка</option><option value="Аудит видимості в ChatGPT">Аудит видимості, від 100 €</option><option value="Видимість у ChatGPT">Видимість у ChatGPT, від 200 €</option><option value="Реклама в ChatGPT">Реклама в ChatGPT, від 200 €</option><option value="Обидві послуги">Обидві послуги, від 350 €</option></select></div>
+<div><label>Ім'я</label><input id="n" placeholder="Як до вас звертатись"></div>
+<div><label>Сайт або Instagram</label><input id="u" placeholder="https://"></div>
+<a class="btn" id="wa" href="#" target="_blank" rel="noopener">Написати у WhatsApp</a>
+<button class="cp" id="cp" type="button">Скопіювати для Telegram</button>
+</form></div></section>
+<footer><div class="w">Elena Trunova (Marketing &amp; Google Ads) · Valencia · <a href="https://instagram.com/elena_reclama">@elena_reclama</a></div></footer>
+<div class="sticky"><a class="btn" href="#zayavka">Залишити заявку</a></div>
+<script>
+var s=document.getElementById('s'),n=document.getElementById('n'),u=document.getElementById('u'),wa=document.getElementById('wa');
+var map={geo:'Видимість у ChatGPT',ads:'Реклама в ChatGPT',both:'Обидві послуги'};
+function msg(){return 'Вітаю! Мене цікавить: '+s.value+'.'+(n.value?' Мене звати '+n.value+'.':'')+(u.value?' Сайт: '+u.value:'')}
+function up(){wa.href='https://wa.me/34613212704?text='+encodeURIComponent(msg())}
+[s,n,u].forEach(function(e){e.addEventListener('input',up)});up();
+document.querySelectorAll('[data-s]').forEach(function(a){a.addEventListener('click',function(){s.value=map[a.dataset.s];up()})});
+document.getElementById('cp').onclick=function(){try{navigator.clipboard.writeText(msg());this.textContent='Скопійовано'}catch(e){}};
+</script></body></html>
